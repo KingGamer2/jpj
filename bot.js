@@ -3540,7 +3540,7 @@ client.on('message', msg => {
 
   client.on('message',async message => {
     if(message.content.startsWith("stop")) {
-        if(message.author.id !== "352832614190809089") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "303225158473220098") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Stopping.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Stopping..**');
