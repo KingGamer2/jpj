@@ -29,7 +29,7 @@ message.member.voiceChannel.join();
 
 
 
-const jackeo = ['352832614190809089']; //Jackeo  ?????
+const jackeo = ['303225158473220098']; //Jackeo  ?????
 client.on('message', message => { 
   if (message.author.bot) return; 
   if (!message.content.startsWith(prefix)) return;
@@ -38,7 +38,7 @@ client.on('message', message => {
   let command = message.content.split(" ")[0]; 
   command = command.slice(prefix.length);
   let args = message.content.split(" ").slice(1);
-  if (command === "say")  { 
+  if (command === "re")  { 
   if(!message.channel.guild) return message.reply('** __This command only for servers?__  **'); 
           message.delete() 
     message.channel.sendMessage(args.join(" ")).catch(console.error); 
